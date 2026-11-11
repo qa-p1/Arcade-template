@@ -9,7 +9,7 @@ description = "The smallest Arcade app: a starting point that already meets ARCA
 
 [dependencies]
 arcade-link = { git = "https://github.com/qa-p1/Arcade-Link", tag = "v1.0.3", features = ["design-egui"] }
-eframe = { version = "0.33", default-features = false, features = ["glow", "wayland", "x11", "default_fonts"] }
+eframe = { version = "0.37", default-features = false, features = ["glow", "wayland", "x11", "default_fonts"] }
 serde_json = "1"
 
 [profile.release]
