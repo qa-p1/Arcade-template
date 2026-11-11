@@ -21,7 +21,7 @@ jobs:
       - name: AppImage
         timeout-minutes: 8
         run: cargo build --release --locked && packaging/linux/build-appimage.sh
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with: { name: release-linux, path: dist/*.AppImage }
   deny:
     runs-on: ubuntu-24.04

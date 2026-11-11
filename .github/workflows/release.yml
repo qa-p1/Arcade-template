@@ -15,7 +15,7 @@ jobs:
       - uses: Swatinem/rust-cache@v2
       - run: cargo build --release --locked && packaging/linux/build-appimage.sh
         timeout-minutes: 12
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with: { name: release-linux, path: dist/*.AppImage }
   version:
     runs-on: ubuntu-24.04
